@@ -1,0 +1,112 @@
+---
+title: "Import and visualize"
+format: html
+---
+
+# Instructions
+
+Welcome to your first project milestone! In this project, you will use the **tidyverse** to investigate real data related to the Journey to Self-Reliance.
+
+We are interested in examining the impact of foreign aid on children's health across the globe. By the end of this project, we'd like to determine whether children's health has improved from 2014 to 2020, and which aid programs are most associated with the improvements. We will split our work into milestones that build on each other to iteratively explore the data.
+
+## How to complete a milestone
+
+Each milestone will require you to read and edit a Quarto document, like this one. **To learn how to use Quarto in Positron and RStudio, see here: https://quarto.org/docs/get-started/hello/positron.html.**
+
+For each milestone, you will need to:
+
+1. **Recreate a result,** like a plot, table, or model. This will require you to use the skills you have studied that week.
+
+2. **Extend the result.** Explore a new question about the data--this will provide an opportunity to both apply the skills you learned that week and to teach yourself something new. We will provide suggestions each week, but you are encouraged to explore any aspect of the data that interests you. Alternatively, apply and extend the skills you learned that week by working with your own data. Remember, being able to teach yourself new parts of a computer language is what will make you a truly competent open source programmer---and we are here to help.
+
+You'll share your extension with your groupmates at the weekly meeting, and show them how they could do the same.
+
+## The `j2sr` data set
+
+The data contains information on individual countries' scores and overall average scores for various Journey to Self-Reliance metrics.
+
+To learn more about the variables contained in the data set, refer to the data dictionary: https://rsacdn.link/milestones/internal/v2/foreign-aid/assets/j2sr_dictionary.html
+
+# Milestone
+
+```{r}
+#| label: setup
+#| include: false
+library(tidyverse)
+```
+
+## R Basics
+
+In this milestone, you'll become familiar with the `j2sr` data set.
+
+## Recreation
+
+### Part 1 - Import
+
+In the code chunk below, use a command **from the readr package** to read in the data set.
+
+* The data set lives in the file `j2sr.csv`, which is stored in the `data/` folder in your working directory.
+* Save the data set as an object named `j2sr`.
+
+_Note_: Both `read_csv()` and `read.csv()` read data from a CSV file, but they differ slightly in _how_ they read in data. Make sure you use the tool from the readr package. (Not sure which is which? Check the help documentation.)
+
+```{r}
+#| label: recreation-import
+
+```
+
+### Part 2 - Explore
+
+Use R to inspect the contents of `j2sr`:
+
+- Display the contents of `j2sr`
+- Use `nrow()` to find the number of observations in `j2sr`
+- Use `mean()` to find the average normalized children's health score (`child_health`)
+- Use `count()` from the dplyr package to count the observations in each region
+- Use `summary()` to generate a summary of the data set
+
+*Hint:* you may want to look up the help pages for each of these functions.
+
+Write your code in the following chunk:
+
+```{r}
+#| label: recreation
+
+```
+
+### Part 3 - Visualize
+
+Using the File Explorer, navigate to the `images/` directory, then click on `milestone01.png` to open an image.
+
+You should see a plot that displays the distribution of `child_health` scores for countries in **Asia in 2020**.
+
+Use `ggplot()` in the chunk below to re-create the plot. **Note** Before plotting, you will first need to filter your data set to only include observations from Asia in 2020.
+
+*Hint:* control how smooth or noisy the distribution looks by controlling the width of the bins.
+
+```{r}
+#| label: recreation-visualize
+
+```
+
+## Extension
+
+Using the code chunk below, investigate a research question about this data, using the visualization skills you learned this week.
+
+Some ideas (we encourage you to choose one):
+
+1. Your recreation focused on the distribution of child health in Asia in 2020 -- how does Asia compare to other regions during that year?
+2. Do child health scores within Asia in 2020 look different for different income groups?
+3. Within a particular country or region of interest, how has child health changed over time?
+4. [any other research question of interest]
+
+Alternately, working with a data set of your own, complete the following:
+
+1. Read in your data
+2. Filter your data using a logical test/condition
+3. Graph this data subset using at least one geom
+
+```{r}
+#| label: extension
+
+```

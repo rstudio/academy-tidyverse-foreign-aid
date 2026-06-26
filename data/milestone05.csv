@@ -1,0 +1,136 @@
+country,region,child_health_change,priority_country
+Afghanistan,Asia,0.139,TRUE
+Albania,Europe and Eurasia,0.017000000000000015,FALSE
+Algeria,Middle East and North Africa,0.0030000000000000027,FALSE
+Angola,Sub-Saharan Africa,0.09699999999999998,TRUE
+Argentina,Latin America and the Caribbean,0.006000000000000005,FALSE
+Armenia,Europe and Eurasia,0.010000000000000009,FALSE
+Azerbaijan,Europe and Eurasia,0.03399999999999992,FALSE
+Bangladesh,Asia,0.05600000000000005,TRUE
+Belarus,Europe and Eurasia,0.0020000000000000018,FALSE
+Belize,Latin America and the Caribbean,0.016000000000000014,FALSE
+Benin,Sub-Saharan Africa,0.052000000000000046,TRUE
+Bhutan,Asia,0.050000000000000044,FALSE
+Bolivia,Latin America and the Caribbean,0.06900000000000006,FALSE
+Bosnia and Herzegovina,Europe and Eurasia,0,FALSE
+Botswana,Sub-Saharan Africa,0.05499999999999994,FALSE
+Brazil,Latin America and the Caribbean,0.027999999999999914,FALSE
+Bulgaria,Europe and Eurasia,0.0020000000000000018,FALSE
+Burkina Faso,Sub-Saharan Africa,0.06600000000000003,TRUE
+Burma,Asia,0.08000000000000007,TRUE
+Burundi,Sub-Saharan Africa,0.05800000000000005,FALSE
+Cabo Verde,Sub-Saharan Africa,0.06599999999999995,FALSE
+Cambodia,Asia,0.09699999999999998,TRUE
+Cameroon,Sub-Saharan Africa,0.07600000000000001,FALSE
+Central African Republic,Sub-Saharan Africa,0.046999999999999986,FALSE
+Chad,Sub-Saharan Africa,0.095,FALSE
+China,Asia,0.05600000000000005,FALSE
+Colombia,Latin America and the Caribbean,0.029999999999999916,FALSE
+Comoros,Sub-Saharan Africa,0.03399999999999992,FALSE
+Congo (Brazzaville),Sub-Saharan Africa,0.04899999999999999,FALSE
+Congo (Kinshasa),Sub-Saharan Africa,0.05099999999999999,FALSE
+Costa Rica,Latin America and the Caribbean,0.009000000000000008,FALSE
+Cote d'Ivoire,Sub-Saharan Africa,0.059,TRUE
+Cuba,Latin America and the Caribbean,0.0119999999999999,FALSE
+Djibouti,Sub-Saharan Africa,0.04799999999999993,FALSE
+Dominica,Latin America and the Caribbean,-0.016000000000000014,FALSE
+Dominican Republic,Latin America and the Caribbean,0.016000000000000014,FALSE
+Ecuador,Latin America and the Caribbean,0.040000000000000036,FALSE
+Egypt,Middle East and North Africa,0.014000000000000012,FALSE
+El Salvador,Latin America and the Caribbean,0.014000000000000012,FALSE
+Equatorial Guinea,Sub-Saharan Africa,0.04699999999999993,FALSE
+Eritrea,Sub-Saharan Africa,0.025000000000000022,FALSE
+Eswatini,Sub-Saharan Africa,0.05800000000000005,FALSE
+Ethiopia,Sub-Saharan Africa,0.08999999999999997,TRUE
+Fiji,Oceania,0.0129999999999999,FALSE
+Gabon,Sub-Saharan Africa,0.04200000000000004,FALSE
+"Gambia, The",Sub-Saharan Africa,0.05400000000000005,FALSE
+Georgia,Europe and Eurasia,0.0040000000000000036,FALSE
+Ghana,Sub-Saharan Africa,0.08199999999999996,TRUE
+Grenada,Latin America and the Caribbean,9.999999999998899e-4,FALSE
+Guatemala,Latin America and the Caribbean,0.02299999999999991,FALSE
+Guinea,Sub-Saharan Africa,0.07200000000000001,TRUE
+Guinea-Bissau,Sub-Saharan Africa,0.07199999999999995,FALSE
+Guyana,Latin America and the Caribbean,0.015000000000000013,FALSE
+Haiti,Latin America and the Caribbean,0.059,TRUE
+Honduras,Latin America and the Caribbean,0.039000000000000035,FALSE
+India,Asia,0.1050000000000001,TRUE
+Indonesia,Asia,0.08899999999999997,TRUE
+Iran,Middle East and North Africa,0.015999999999999903,FALSE
+Iraq,Middle East and North Africa,0.06399999999999995,FALSE
+Jamaica,Latin America and the Caribbean,0.010000000000000009,FALSE
+Jordan,Middle East and North Africa,0.0010000000000000009,FALSE
+Kazakhstan,Asia,0.0050000000000000044,FALSE
+Kenya,Sub-Saharan Africa,0.03999999999999998,TRUE
+Kiribati,Oceania,0.050000000000000044,FALSE
+"Korea, North",Asia,0.01100000000000001,FALSE
+Kyrgyzstan,Asia,0.02499999999999991,FALSE
+Laos,Asia,0.1130000000000001,FALSE
+Lebanon,Middle East and North Africa,0.03499999999999992,FALSE
+Lesotho,Sub-Saharan Africa,0.07299999999999995,FALSE
+Liberia,Sub-Saharan Africa,0.055999999999999994,TRUE
+Libya,Middle East and North Africa,0.017000000000000015,FALSE
+Madagascar,Sub-Saharan Africa,0.059,TRUE
+Malawi,Sub-Saharan Africa,0.08000000000000002,TRUE
+Malaysia,Asia,-0.0010000000000000009,FALSE
+Maldives,Asia,0.03300000000000003,FALSE
+Mali,Sub-Saharan Africa,0.15400000000000003,TRUE
+Marshall Islands,Oceania,0.016000000000000014,FALSE
+Mauritania,Sub-Saharan Africa,0.10800000000000004,FALSE
+Mauritius,Sub-Saharan Africa,0,FALSE
+Mexico,Latin America and the Caribbean,0.027999999999999914,FALSE
+"Micronesia, Federated States of",Oceania,0.025000000000000022,FALSE
+Moldova,Europe and Eurasia,0.025000000000000022,FALSE
+Mongolia,Asia,0.05500000000000005,FALSE
+Montenegro,Europe and Eurasia,0.020000000000000018,FALSE
+Morocco,Middle East and North Africa,0.061000000000000054,FALSE
+Mozambique,Sub-Saharan Africa,0.14499999999999996,TRUE
+Namibia,Sub-Saharan Africa,0.040000000000000036,FALSE
+Nepal,Asia,0.11199999999999999,TRUE
+Nicaragua,Latin America and the Caribbean,0.014000000000000012,FALSE
+Niger,Sub-Saharan Africa,0.098,TRUE
+Nigeria,Sub-Saharan Africa,0.10599999999999998,TRUE
+North Macedonia,Europe and Eurasia,0.020000000000000018,FALSE
+Pakistan,Asia,0.07100000000000006,TRUE
+Palau,Oceania,0.007000000000000006,FALSE
+Papua New Guinea,Oceania,0.03600000000000003,FALSE
+Paraguay,Latin America and the Caribbean,0.04599999999999993,FALSE
+Peru,Latin America and the Caribbean,0.03600000000000003,FALSE
+Philippines,Asia,0.050000000000000044,TRUE
+Russia,Europe and Eurasia,0.0129999999999999,FALSE
+Rwanda,Sub-Saharan Africa,0.06400000000000006,TRUE
+Saint Lucia,Latin America and the Caribbean,0.010000000000000009,FALSE
+Saint Vincent and the Grenadines,Latin America and the Caribbean,0.0020000000000000018,FALSE
+Samoa,Oceania,0.007999999999999896,FALSE
+Sao Tome and Principe,Sub-Saharan Africa,0.051000000000000045,FALSE
+Senegal,Sub-Saharan Africa,0.09599999999999997,TRUE
+Serbia,Europe and Eurasia,0.013000000000000012,FALSE
+Sierra Leone,Sub-Saharan Africa,0.14200000000000002,TRUE
+Solomon Islands,Oceania,0.009000000000000008,FALSE
+Somalia,Sub-Saharan Africa,0.135,FALSE
+South Africa,Sub-Saharan Africa,0.04299999999999993,FALSE
+South Sudan,Sub-Saharan Africa,0.02200000000000002,TRUE
+Sri Lanka,Asia,0.028999999999999915,FALSE
+Sudan,Sub-Saharan Africa,0.055999999999999994,FALSE
+Suriname,Latin America and the Caribbean,0.029999999999999916,FALSE
+Syria,Middle East and North Africa,0.09300000000000008,FALSE
+Tajikistan,Asia,0.04300000000000004,FALSE
+Tanzania,Sub-Saharan Africa,0.09352729499999995,TRUE
+Thailand,Asia,0.014136519000000014,TRUE
+Timor-Leste,Asia,0.08992961200000005,FALSE
+Togo,Sub-Saharan Africa,0.07544676,FALSE
+Tonga,Oceania,-2.5450500000001597e-4,FALSE
+Tunisia,Middle East and North Africa,0.03987499699999997,FALSE
+Turkey,Europe and Eurasia,0.02087036199999992,FALSE
+Turkmenistan,Asia,0.022278473000000076,FALSE
+Tuvalu,Oceania,0.006674454999999968,FALSE
+Uganda,Sub-Saharan Africa,0.08372538799999996,TRUE
+Ukraine,Europe and Eurasia,0.004831701999999938,FALSE
+Uzbekistan,Asia,0.006392370999999897,FALSE
+Vanuatu,Oceania,0.009252005000000008,FALSE
+Venezuela,Latin America and the Caribbean,-0.0035837760000000385,FALSE
+Vietnam,Asia,0.06123610400000001,FALSE
+West Bank and Gaza,Middle East and North Africa,0.022035472999999972,FALSE
+Yemen,Middle East and North Africa,0.032456401000000024,TRUE
+Zambia,Sub-Saharan Africa,0.046838989,TRUE
+Zimbabwe,Sub-Saharan Africa,-0.001506520999999983,TRUE

@@ -1,0 +1,37 @@
+---
+title: Dollars to Results Data Dictionary
+output:
+  html_document:
+    theme: cerulean
+    css: https://rsacdn.link/teachthis/css/style.css
+---
+
+## Dollars to Results Dataset
+
+The Dollars to Results dataset provides information about USAID investment in different countries and across different sectors of government and industry from 2014 - 2021. In USAID's words, the purpose of these spending initiatives is to:
+
+> lead the U.S. Government's international development and disaster assistance through partnerships and investments that save lives, reduce poverty, strengthen democratic governance, and help people emerge from humanitarian crises and progress beyond assistance.
+
+### Variables: `d2r.csv`
+
+`country_id` : Country ID
+
+`country_name` : Country name
+
+`result_id` : Result ID
+
+`result_name` : Result name (specifies the unit of `value`)
+
+`sector_id` : Sector ID
+
+`sector_name` : Sector name
+
+`fiscal_year` : Fiscal year
+
+`disbursements` : Spending amount in US Dollars
+
+`value` : Value of result (the unit of this value is specified by `result_name`)
+
+`male_value` : Value of result for males (only applies to specific results)
+
+`female_value` : Value of result for females (only applies to specific results)

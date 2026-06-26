@@ -1,0 +1,130 @@
+---
+title: "Work with data types"
+format: html
+---
+
+# Instructions
+
+This week, you worked with three new data types in R -- factors, strings, and date-times -- using the forcats, stringr, and lubridate packages, respectively.
+
+In this milestone, you'll use factor reordering to visualize how changes in child health over time vary by country and region.
+
+To learn more about the variables contained in the data set, refer to the data dictionary: https://rsacdn.link/milestones/internal/v2/foreign-aid/assets/j2sr_dictionary.html
+
+# Milestone
+
+```{r}
+#| label: setup
+#| include: false
+
+# Load your packages here
+
+```
+
+## Data types
+
+In this milestone, you'll use the forcats package along with ggplot2 to visualize how changes in child health over time vary geographically.
+
+## Recreation
+
+### Part 1 - Import
+
+Before you begin, you will need to import your data set. Use the code chunk below to read the data from the data file `j2sr.csv`, which is stored in the `data/` folder in your working directory. Be sure to save the data to an object named `j2sr`.
+
+```{r}
+#| label: recreation-import
+
+```
+
+### Part 2 - Prepare the data
+
+Run the code below to see a table. Your task is to combine code from previous milestones to calculate the change in child health scores from 2014 to 2020 for each country and region.
+
+```{r}
+#| label: recreate-this-1
+#| message: false
+solution <- readr::read_csv("data/milestone05.csv")
+solution
+```
+
+To create this table, you will need to:
+
+1. Filter the data to only include observations from 2014 and 2020
+2. Group the data by `country` and `region`
+3. Summarize the `child_health_change` for each country
+4. Add the `priority_country` column (using the `priority_countries` vector below)
+5. Remove any rows with a missing value of `child_health_change`
+
+```{r}
+#| label: create-vector
+priority_countries <- c("Ethiopia", "Mozambique", "Nigeria", "Tanzania", "Uganda", "DR Congo", "Ghana", "Malawi", "Mali", "Senegal", "Kenya", "Rwanda", "Zambia", "Liberia", "Madagascar", "Bangladesh", "Nepal", "Burma", "India", "Haiti", "Afghanistan", "Pakistan", "South Sudan", "Yemen", "Burkina Faso", "Niger", "Indonesia", "Cambodia", "Cameron", "Cote d'Ivoire", "Sierra Leone", "Zimbabwe", "Angola", "Guinea", "Thailand", "Benin", "Philippines")
+```
+
+Work in the code chunk below. Save the result as `health_change`.
+
+```{r}
+#| label: recreation-prep
+
+```
+
+Run the following code chunk to test whether you have the same answer as the solution:
+
+```{r}
+#| label: compare
+#| eval: false
+waldo::compare(health_change, solution, tolerance = 1e-4)
+```
+
+### Part 3 - The role of factor orders in visualizations
+
+You can use the `health_change` table to visualize how the change in children's health varies by country and region. Run the chunk below to view a first attempt at this plot.
+
+```{r}
+#| label: first-plot
+#| eval: false
+health_change |>
+  ggplot(aes(x = child_health_change, y = country, fill = priority_country)) +
+  geom_col() +
+  facet_wrap(vars(region), scales = "free_y") +
+  labs(
+    x = "Change in Child Health",
+    y = "Country"
+  )
+```
+
+Because the order of the countries on the y-axis and the regions (facets) is arbitrary (alphabetical), it is difficult to glean information from this plot. Let's improve this plot by giving these variables a more principled order.
+
+#### Visualization
+
+Using the File Explorer, navigate to the `images/` directory, then click on `milestone05.png` to open an image.
+
+You should see a new version of this plot in which *both* the order of the countries on the y-axis and the regions (facets) now corresponds to the average change in children's health scores. Your task is to recreate this plot.
+
+Use the chunk below to recreate this plot. Hint: which function from the forcats package can you use to reorder a factor by another variable?
+
+```{r}
+#| label: recreation-visualize
+
+```
+
+## Extension
+
+Using the code chunk below, investigate a research question about this data, using the skills you have learned this week and in previous weeks of Academy. Some ideas:
+
+1. How do total disbursements vary by country and region? How do priority countries compare to non-priority countries in terms of disbursements? Use faceting and factor reordering as you did in your recreation to visualize this.
+2. Are disbursements to health-related sectors associated with larger changes in child health compared to disbursements to other types of sectors? Use string matching to wrangle the `d2r` data set in order to explore this question.
+3. [any other research question of interest]
+
+Alternately, working with a data set of your own, complete the following:
+
+1. Read in your data
+2. If your data contains ...
+  ... date-time data, use a lubridate function to correctly format your date-time variables
+  ... string data, use a stringr function to manipulate your string variables
+  ... categorical data, use a forcats function to modify the factor levels of your categorical variables (reorder, recode, etc.)
+3. Using a table or graph, present a meaningful subset of your modified data
+
+```{r}
+#| label: extension
+
+```

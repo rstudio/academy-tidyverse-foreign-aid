@@ -1,0 +1,127 @@
+---
+title: "Tidy and join tables"
+format: html
+---
+
+# Instructions
+
+This week you learned about tidying and joining data sets with the tidyr (pronounced tidy-R) and dplyr packages.
+
+Joining data sets can be deceptively tricky. It is important to keep in mind that prepping and inspecting the tables you're working with *before* you do a join is often more important (and takes more time) than doing the join itself.
+
+You'll use some of these skills in the milestone to the right.
+
+To learn more about the variables contained in the data sets, refer to the data dictionaries: https://rsacdn.link/milestones/internal/v2/foreign-aid/assets/j2sr_dictionary.html and https://rsacdn.link/milestones/internal/v2/foreign-aid/assets/d2r_dictionary.html
+
+# Milestone
+
+```{r}
+#| label: setup
+#| include: false
+
+# Load your packages here
+
+```
+
+## Tidy and join
+
+In this milestone, you'll check whether larger aid disbursements are associated with larger health improvements. To do this, you'll need to use the Dollars to Results data (in `d2r.csv`) alongside the Journey to Self-Reliance data you've been using (in `j2sr.csv`). Both data sets are stored in your `data/` directory.
+
+## Recreation
+
+### Part 1 - Import
+
+Before you begin, you will need to import your data sets. Use the code chunk below to read two data sets from the `data/` directory:
+
+1. `j2sr.csv`, save it as `j2sr`
+2. `d2r.csv`, save it as `d2r`
+
+```{r}
+#| label: recreation-import
+
+```
+
+### Part 2 - Prepare the data
+
+Run the code below to recreate the table of children's health change we built in previous milestones. You will use this table to join to a new data set.
+
+```{r}
+#| label: prep-data
+#| eval: false
+health_change <-
+  j2sr |>
+  filter(year %in% c(2014, 2020)) |>
+  group_by(country) |>
+  summarize(child_health_change = last(child_health) - first(child_health))
+
+health_change
+```
+
+Next, use what you've learned about the dplyr package to transform `d2r` into a table of total disbursements per country. You will need to:
+
+1. Filter the data to only include disbursements (`result_name == "disbursements"`) between the fiscal years 2014 and 2020
+2. Group the data by `country_name`
+3. Summarize the `total_disbursements` for each country
+
+Work in the code chunk below. Save the result as `total_disbursements`.
+
+```{r}
+#| label: recreation-summary
+
+```
+
+### Part 3 - Join tables
+
+Run the code below to see a table.
+
+```{r}
+#| label: recreate-this
+#| message: false
+solution <- readr::read_csv("data/milestone04.csv")
+solution
+```
+
+Your task is to use what you've learned about the dplyr package to transform `health_change` and `total_disbursements` into this table. You will need to do some pre-join checks:
+
+1. Which variables can you join on?
+2. Do the data sets have any mismatched observations?
+3. Perform any necessary data cleaning.
+4. Check again as needed!
+
+Then, join the data sets so that every country in `health_change` keeps its `child_health_change`, with the matching `total_disbursements` added alongside.
+
+Work in the code chunk below. Save the result as `disbursement_health_change`.
+
+```{r}
+#| label: recreation-join
+
+```
+
+Run the following code chunk to test whether you have the same answer as the solution:
+
+```{r}
+#| label: compare
+#| eval: false
+waldo::compare(disbursement_health_change, solution, tolerance = 1e-4)
+```
+
+## Extension
+
+Using the code chunk below, investigate a single research question about this data, using the skills you have learned this week and in previous weeks of Academy. Some ideas:
+
+1. Create a visualization that takes advantage of the new variable(s) you now have access to. You might find the `slice()` family of functions useful to identify and filter for the top N countries by aid disbursements: https://dplyr.tidyverse.org/reference/slice.html
+2. The `d2r` data set contains information on many other "results" besides aid disbursements; explore another metric of interest in this data set and ask a question about it using tables and graphs. You may consider first narrowing your exploration based on sector name (e.g. "Basic Education" or "Water Supply and Sanitation".)
+3. Many other country-level data sets may be relevant to this project. Find another country-level variable from a publicly available data set, join in that data, and ask a question of the new data set. (e.g. Is there a relationship between child health and population density?)
+4. [any other research question of interest]
+
+Alternately, working with a data set of your own, complete the following:
+
+1. Read in your data
+2. Complete a data wrangling task relevant to your data (tidying and/or reshaping/pivoting your data); if appropriate, join your data with a second data set (filtering or mutating join)
+3. Show summary tables of your data throughout these transformations
+
+
+```{r}
+#| label: extension
+
+```

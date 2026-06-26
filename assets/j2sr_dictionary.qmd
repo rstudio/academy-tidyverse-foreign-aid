@@ -1,0 +1,59 @@
+---
+title: Journey to Self-Reliance Data Dictionary
+output:
+  html_document:
+    theme: cerulean
+    css: https://rsacdn.link/teachthis/css/style.css
+---
+
+## Journey to Self-Reliance Dataset
+
+The Journey to Self-Reliance dataset provides individual countries' scores and overall average scores for all low- and middle-income countries worldwide, based on World Bank income group classifications (July 2018) and country designations provided in the U.S. Department of State's Independent States in the World list (May 2018).
+
+### Variables: `j2sr.csv`
+
+`country` : Country name
+
+`year` : Year for which the data is reported
+
+`region` : Region of the country's location
+
+`income_group` : Income group of the country based on World Bank income group classifications July 2018 (low and middle)
+
+`absence_of_corruption` : Measure of corruption is the country
+
+`business_investment_environment` : Assesses a country's entrepreneurial climate by measuring business' access to infrastructure (such as the internet and transport, and to credit), business flexibility (the costs of starting business and of hiring and firing), clear and fair regulations (e.g., intellectual property rights), and perceptions of meritocracy and opportunity. Source: [Legatum Institute, Prosperity Index](http://www.prosperity.com/)
+
+`child_health` : A composite measure that aggregates under-5 child mortality, access to improved water sources, and access to improved sanitation facilities. Source: [Columbia University Center for International Earth Science Information Network (CIESIN)](http://sedac.ciesin.columbia.edu/data/set/nrmi-natural-resource-protection-child-health-indicators-2016)
+
+`disbursements` : Credit amount in Deutsche Mark (DEM)
+
+`civil_society_media_effectiveness` : Measure of the range of actions and mechanisms that citizens, civil society organizations, and an independent media can use to hold a government accountable. The mechanisms include using informal tools such as social mobilization and investigative journalism. Source: [Varieties of Democracy (V-Dem), Diagonal Accountability Index](https://www.v-dem.net/en/)
+
+`economic_gender_gap` : Index comprising five components: (1) wage equality between women and men for similar work; (2) the ratio of female estimated earned income to male income; (3) the ratio of female labor force participation to male participation; (4) the ratio of female legislators, senior officials, and managers to male counterparts; and (5) the ratio of female professional and technical workers to male counterparts. Source: [World Economic Forum, Global Gender Gap Report, Economic Participation and Opportunity Sub-Index](https://www.weforum.org/reports/the-global-gender-gap-report-2017)
+
+`education_quality` : Measure of the percentage of students attaining a minimum proficiency in reading toward the end of primary school, providing a comparative evaluation of the relative performance of educational systems across countries. Source: [World Bank](http://documents.worldbank.org/curated/en/706141516721172989/Global-data-set-on-education-quality-1965-2015)
+
+`environmental_policy` : Measure of extent of marine protected areas, terrestrial biome protection (weighted for both national and global scarcity), representativeness of protected areas, and whether protected areas cover the ranges and habitats of critical species. Source: [Yale University/Columbia University Center for International Earth Science Information Network (CIESIN)](https://epi.envirocenter.yale.edu/2018-epi-report/biodiversity-habitat)
+
+`gdp_per_capita_(ppp)` : Measure of the flow of resources available to households, firms, and government to finance development as the country's total Gross Domestic Product (PPP) divided by the country's population. Source: [World Bank, World Development Indicators](https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD)
+
+`government_effectiveness` : Measure of the quality of public services, the quality of the civil service and its independence from political pressure, the quality of policy formulation and implementation, and the credibility of the government's commitment to its stated policies. Source: [World Bank, Worldwide Governance Indicators](http://info.worldbank.org/governance/wgi/#home)
+
+`liberal_democracy` : Measure of freedom of expression, freedom of association, suffrage, elections, rule of law, judicial constraints on the executive branch, and legislative constraints on the executive branch. Source: [Varieties of Democracy (V-Dem)](https://www.v-dem.net/en/)
+
+`open_government` : Measure of the degree to which a government shares information, empowers people with tools to hold the government accountable, and fosters citizen participation in public policy deliberations. Sub-factors include: publicized laws and government data, right to information, civic participation, and complaint mechanisms. Source: [World Justice Project, Rule of Law Index](https://worldjusticeproject.org/our-work/wjp-rule-law-index/wjp-rule-law-index-2017%E2%80%932018/factors-rule-law/open-government-factor-3)
+
+`safety_security` : A combination of objective measures of security, and subjective measures of personal safety, personal freedom, and social tolerance. Source: [Legatum Institute, Prosperity Index](http://www.prosperity.com/)
+
+`social_group_equality` : Measure of political equality across social groups as defined by ethnicity, religion, caste, race, language, and region. Source: [Varieties of Democracy (V-Dem), Social Group Equality in Respect to Civil Liberties](https://www.v-dem.net/en/)
+
+`trade_freedom` : Measure of a country's openness to international trade based on average tariff rates and non-tariff barriers to trade. Source: [Heritage Foundation, Index of Economic Freedom](https://www.heritage.org/index/)
+
+`export_sophistication` : Measure of the diversification of a country's export products, one marker that can help gauge economic sophistication and resilience. Source: [UNCTAD, Export Concentration Index](http://unctadstat.unctad.org/wds/TableViewer/tableView.aspx?ReportId=120)
+
+`information_communication_technology_(ict)_adoption` : Index comprising: (1) internet users as percent of population; (2) fixed-broadband internet subscriptions per 100 population; (3) internet bandwidth kb/s/user; (4) mobile broadband subscriptions per 100 population; (5) mobile telephone subscriptions per 100 population; and (6) fixed telephone lines per 100 population. Source: [World Economic Forum (WEF), Global Competitiveness Index](http://reports.weforum.org/global-competitiveness-index-2017-2018/#topic=data)
+
+`poverty_rate` : Measure of the percentage of a country's population living on less than $5/day, standardized across countries using purchasing power parity (PPP) exhange rates. Poverty estimates are inverted, so that higher poverty rates lead to lower, less favorable estimates closer to 0 and lower poverty rates lead to higher, more favorable estimates closer to 1. Source: [World Bank, PovCalNet](http://iresearch.worldbank.org/PovcalNet/povOnDemand.aspx)
+
+`tax_system_effectiveness` : Measure of the efficiency of tax collection in relation to corporate taxes, household income taxes, national geographic consistency and reach, and the government's ability to limit tax evasion. Source: [Institutional Profiles Databas](http://www.cepii.fr/institutions/en/ipd.asp)
