@@ -42,7 +42,6 @@ Run the code below to recreate the table of children's health change we built la
 
 ```{r}
 #| label: prep-data
-#| eval: false
 health_change <-
   j2sr |>
   filter(year %in% c(2014, 2020)) |>
