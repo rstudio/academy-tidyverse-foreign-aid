@@ -68,7 +68,7 @@ Your task is to use what you've learned about the dplyr package to transform `he
 
 ```{r}
 #| label: create-vector
-priority_countries <- c("Ethiopia", "Mozambique", "Nigeria", "Tanzania", "Uganda", "DR Congo", "Ghana", "Malawi", "Mali", "Senegal", "Kenya", "Rwanda", "Zambia", "Liberia", "Madagascar", "Bangladesh", "Nepal", "Burma", "India", "Haiti", "Afghanistan", "Pakistan", "South Sudan", "Yemen", "Burkina Faso", "Niger", "Indonesia", "Cambodia", "Cameron", "Cote d'Ivoire", "Sierra Leone", "Zimbabwe", "Angola", "Guinea", "Thailand", "Benin", "Philippines")
+priority_countries <- c("Ethiopia", "Mozambique", "Nigeria", "Tanzania", "Uganda", "Congo (Kinshasa)", "Ghana", "Malawi", "Mali", "Senegal", "Kenya", "Rwanda", "Zambia", "Liberia", "Madagascar", "Bangladesh", "Nepal", "Burma", "India", "Haiti", "Afghanistan", "Pakistan", "South Sudan", "Yemen", "Burkina Faso", "Niger", "Indonesia", "Cambodia", "Cameroon", "Cote d'Ivoire", "Sierra Leone", "Zimbabwe", "Angola", "Guinea", "Thailand", "Benin", "Philippines")
 ```
 
 Work in the code chunk below. Save the result as `health_priority`.
