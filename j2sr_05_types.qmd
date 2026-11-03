@@ -52,8 +52,9 @@ To create this table, you will need to:
 1. Filter the data to only include observations from 2014 and 2020
 2. Group the data by `country` and `region`
 3. Summarize the `child_health_change` for each country
-4. Add the `priority_country` column (using the `priority_countries` vector below)
-5. Remove any rows with a missing value of `child_health_change`
+4. Ungroup the result (`ungroup()`, or `.groups = "drop"` in `summarize()`)
+5. Add the `priority_country` column (using the `priority_countries` vector below)
+6. Remove any rows with a missing value of `child_health_change`
 
 ```{r}
 #| label: create-vector
@@ -98,7 +99,7 @@ Because the order of the countries on the y-axis and the regions (facets) is arb
 
 Using the File Explorer, navigate to the `images/` directory, then click on `milestone05.png` to open an image.
 
-You should see a new version of this plot in which *both* the order of the countries on the y-axis and the regions (facets) now corresponds to the average change in children's health scores. Your task is to recreate this plot.
+You should see a new version of this plot in which *both* the order of the countries on the y-axis and the regions (facets) now corresponds to the median change in children's health scores. Your task is to recreate this plot.
 
 Use the chunk below to recreate this plot. Hint: which function from the forcats package can you use to reorder a factor by another variable?
 
